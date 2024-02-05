@@ -1,0 +1,8 @@
+version: "1"
+services:
+  AirAstana:
+    container_name: 'AirAstanaBOT'
+    build:
+      './'
+    ports:
+      - '9999:8000'
