@@ -31,9 +31,9 @@ def echo_all(user_message):
         assistant_id=assistant
     )
     loops = 0
-    while loops < 60:
+    while loops < 180:
         loops += 1
-        sleep(2)
+        sleep(1)
         run = client.beta.threads.runs.retrieve(
             thread_id=thread.id,
             run_id=run.id
